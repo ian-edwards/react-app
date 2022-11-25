@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'
+import { TextInput } from './Components/TextInput'
 
 function App() {
+  const [input, setInput] = useState('')
   return (
     <div className="App">
+      <TextInput />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
